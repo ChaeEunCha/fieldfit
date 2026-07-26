@@ -1,26 +1,62 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.css");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* docs/design.md 2.1 색상 팔레트 */
+  --canvas: #f3ede1;
+  --surface: #fdfbf5;
+  --brand-deep: #3f5a3c;
+  --brand: #4a7c59;
+  --brand-brown: #8b6f47;
+  --ink: #2e2a22;
+  --ink-soft: #5b5445;
+  --muted: #877e6b;
+  --placeholder: #a9a292;
+  --border: #e8e0d0;
+  --border-strong: #ddd2be;
+  --frame-border: #e5dcc9;
+  --chip-selected: #e9f0e2;
+  --risk-bg: #fdece8;
+  --risk-border: #e8907c;
+  --risk-text: #b5432b;
+  --warning-bg: #fdf3e8;
+  --warning-text: #b5811d;
+  --info-bg: #f5efe3;
+  --info-border: #e3d9c4;
+  --info-text: #8b6f47;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand: var(--brand);
+  --color-brand-brown: var(--brand-brown);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-muted: var(--muted);
+  --color-placeholder: var(--placeholder);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-frame-border: var(--frame-border);
+  --color-chip-selected: var(--chip-selected);
+  --color-risk-bg: var(--risk-bg);
+  --color-risk-border: var(--risk-border);
+  --color-risk-text: var(--risk-text);
+  --color-warning-bg: var(--warning-bg);
+  --color-warning-text: var(--warning-text);
+  --color-info-bg: var(--info-bg);
+  --color-info-border: var(--info-border);
+  --color-info-text: var(--info-text);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: "Pretendard", var(--font-manrope), ui-sans-serif, sans-serif;
+
+  --shadow-card: 0 20px 60px rgba(90, 72, 42, 0.16);
+  --shadow-cta: 0 10px 24px rgba(139, 111, 71, 0.26);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
 }
